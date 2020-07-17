@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的补贴</title>
+    <link rel="stylesheet" href="../libs/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        .tips-box{
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="iconfont home">
+
+        <p class="p10">
+            <span class="icon-address">&#xe672;&nbsp;</span>
+            <span>当前位置 >&nbsp;&nbsp; 工作台</span> 
+        </p>
+        <div class="home-main">
+            <ul class="home-content">
+                <li class="block date-block">
+                    <p>
+                        <span>工作日历</span>
+                        <span class="home-date"></span>
+                    </p>
+                    <div class="site-demo-laydate">
+                        <div class="layui-inline" id="homeDate"></div>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="layui-tab layui-tab-brief m0" lay-filter="docDemoTabBrief">
+                        <ul class="layui-tab-title">
+                          <li class="layui-this">待办事项</li>
+                          <li>已办事项<span class="layui-badge-dot"></span></li>
+                        </ul>
+                        <div class="layui-tab-content p0">
+                          <div class="layui-tab-item layui-show">
+                            <table class="layui-table" >
+                                <colgroup>
+                                  <col width="100">
+                                  <col width="">
+                                  <col width="120">
+                                </colgroup>
+                                <thead class="top-head">
+                                  <tr>
+                                    <th class="tc">待办事项</th>
+                                    <th class="tc">事件描述</th>
+                                    <th class="tc">时间</th>
+                                  </tr> 
+                                </thead>
+                                <tbody class="tbody-content">
+                                  <tr>
+                                    <td class="tc">
+                                        <span>审批</span>
+                                    </td>
+                                    <td>
+                                        <span><a class="blueColor" href="javascript:;" _href="page/wdbt/wdbt.html">县农业农村局</a></span>
+                                    </td>
+                                    <td>
+                                        <span>2020.03.31</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tc">
+                                        <span>审批</span>
+                                    </td>
+                                    <td>
+                                        <span><a class="blueColor" href="javascript:;" _href="page/wdbt/wdbt.html">县农业农村局</a></span>
+                                    </td>
+                                    <td>
+                                        <span>2020.03.31</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tc">
+                                        <span>审批</span>
+                                    </td>
+                                    <td>
+                                        <span>县农业农村局</span>
+                                    </td>
+                                    <td>
+                                        <span>2020.03.31</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tc">
+                                        <span>审批</span>
+                                    </td>
+                                    <td>
+                                        <span>县农业农村局</span>
+                                    </td>
+                                    <td>
+                                        <span>2020.03.31</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tc">
+                                        <span>审批</span>
+                                    </td>
+                                    <td>
+                                        <span>县农业农村局</span>
+                                    </td>
+                                    <td>
+                                        <span>2020.03.31</span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <p class="block-footer">
+                                <span class=" pl10"><a class="blueColor" href="javascript:;" _href="page/demo.html">查看全部已办事项</a></span>
+                                <span class="pr10">总计 1 项</span>
+                            </p>
+                          </div>
+                          <div class="layui-tab-item">
+                            <table class="layui-table" >
+                                <colgroup>
+                                  <col width="100">
+                                  <col width="">
+                                  <col width="120">
+                                </colgroup>
+                                <thead class="top-head">
+                                  <tr>
+                                    <th class="tc">已办事项</th>
+                                    <th class="tc">事件描述</th>
+                                    <th class="tc">时间</th>
+                                  </tr> 
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="tc">
+                                        <span >审批</span>
+                                    </td>
+                                    <td>
+                                        <span><a class="blueColor" href="javascript:;" _href="page/wdbt/wdbt.html">县农业农村局</a></span>
+                                    </td>
+                                    <td>
+                                        <span>2020.03.31</span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <p class="block-footer">
+                                <span class="pl10"><a class="blueColor" href="javascript:;" _href="page/demo.html">查看全部待办办事项</a></span>
+                                <span class="fr pr10">总计 1 项</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div> 
+                </li>
+                <li class="block">
+                    <div class="layui-tab layui-tab-brief m0" lay-filter="docDemoTabBrief">
+                        <ul class="layui-tab-title">
+                          <li class="layui-this">补贴动态</li>
+                        </ul>
+                        <div class="layui-tab-content p0">
+                          <div class="layui-tab-item layui-show">
+                            <table class="layui-table" >
+                                <colgroup>
+                                  <col width="100">
+                                  <col width="">
+                                  <col width="120">
+                                </colgroup>
+                                <thead class="top-head">
+                                  <tr>
+                                    <th class="tc">待办事项</th>
+                                    <th class="tc">事件描述</th>
+                                    <th class="tc">时间</th>
+                                  </tr> 
+                                </thead>
+                                <tbody class="tbody-content">
+                                  <tr>
+                                    <td class="tc">
+                                        <span>审批</span>
+                                    </td>
+                                    <td>
+                                        <span><a class="blueColor" href="javascript:;" _href="page/wdbt/wdbt.html">县农业农村局</a></span>
+                                    </td>
+                                    <td>
+                                        <span>2020.03.31</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="tc">
+                                        <span>审批</span>
+                                    </td>
+                                    <td>
+                                        <span><a class="blueColor" href="javascript:;" _href="page/wdbt/wdbt.html">县农业农村局</a></span>
+                                    </td>
+                                    <td>
+                                        <span>2020.03.31</span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <p class="block-footer">
+                                <span class="blueColor pl10"><a class="blueColor" href="javascript:;" _href="page/demo.html">查看全部补贴动态</a></span>
+                                <span class="fr pr10">总计 1 项</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div> 
+                </li>
+                <div class="clear"></div>
+            </ul>
+            <div class="card">
+                <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                    <ul class="layui-tab-title">
+                      <li class="layui-this">耕地地力补贴项目跟踪</li>
+                      <li>农机补贴项目跟踪</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                      <div class="layui-tab-item layui-show">
+                        <div class="card-search p10">
+                            <div class="layui-form">
+                                <div class="layui-form-item">
+                                    <div class="layui-inline">
+                                        <select name="subsidyYear" lay-filter="subsidyYear">
+                                            <option value="">请选择补贴年度</option>
+                                            <option value="0">省</option>
+                                            <option value="1">市</option>
+                                            <option value="2">县</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-inline">
+                                        <select name="subsidyState" lay-filter="subsidyState">
+                                            <option value="">请选择补贴状态</option>
+                                            <option value="0">省</option>
+                                            <option value="1">市</option>
+                                            <option value="2">县</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-inline">
+                                        <input type="text" name="subsidyName" class="layui-input" placeholder="请输入补贴名称">
+                                    </div>
+                                    <div class="searchBtn" onclick="resetBtn()">
+                                        &#xe627;&nbsp;&nbsp; 重置
+                                    </div>
+                                    <div class="searchBtn">
+                                        &#xe627;&nbsp;&nbsp; 查询
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="card-progress p10">
+                            <ul class="progressList">
+                                <li>总体进度</li>
+                                <li><span class="complete">&#xe6c8;&nbsp;&nbsp;</span>已完成</li>
+                                <li><span class="progress">&#xe6c8;&nbsp;&nbsp;</span>正在进行</li>
+                                <li><span class="noStart">&#xe6ed;&nbsp;&nbsp;</span>暂未开始</li>
+                                <li><span class="yujin">&#xe726;&nbsp;&nbsp;</span>预警</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <table class="layui-table" >
+                                <colgroup>
+                                <col width="100">
+                                <col width="200">
+                                <col width="200">
+                                <col width="200">
+                                <col width="150">
+                                <col width="100">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th class="tc">设立补贴</th>
+                                    <th class="tc">乡镇核对明细</th>
+                                    <th class="tc">明细上报</th>
+                                    <th class="tc">指标下达</th>
+                                    <th class="tc">资金发放</th>
+                                    <th class="tc">结果反馈</th>
+                                </tr> 
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <span>省农业农村厅</span>
+                                    </td>
+                                    <td>
+                                        <span>登记表打印</span>
+                                        <span>清册表打印</span>
+                                        <span>公示</span>
+                                    </td>
+                                    <td>
+                                        <span>县农业农村局</span>
+                                        <span>市农业农村局</span>
+                                        <span>省农业农村局</span>
+                                    </td>
+                                    <td>
+                                        <span>省财政厅</span>
+                                        <span>市财政局</span>
+                                        <span>县财政局</span>
+                                    </td>
+                                    <td>
+                                        <span>县农业农村局</span>
+                                        <span>银行</span>
+                                    </td>
+                                    <td>
+                                        <span>县农业农村局</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="completeColor line_155 state_line cursor" onclick="iconDesc('a')">&#xe6c8;&nbsp;&nbsp;</span>
+                                    </td>
+                                    <td>
+                                        <span class="yujinColor line_86 state_line cursor" onclick="iconDesc('b')">&#xe726;</span>
+                                        <span class="progressing line_86" onclick="iconDesc('c')">&#xe6c8;</span>
+                                        <span class="progressing line_116">&#xe6c8;</span>
+                                    </td>
+                                    <td>
+                                        <span class="progressing line_86">&#xe6c8;</span>
+                                        <span class="progressing line_86">&#xe6c8;</span>
+                                        <span class="noStartcolor line_116">&#xe6ed;</span>
+                                    </td>
+                                    <td>
+                                        <span class="noStartcolor line_86">&#xe6ed;</span>
+                                        <span class="noStartcolor line_86">&#xe6ed;</span>
+                                        <span class="noStartcolor line_122">&#xe6ed;</span>
+                                    </td>
+                                    <td>
+                                        <span class="noStartcolor line_86">&#xe6ed;</span>
+                                        <span class="noStartcolor line_142">&#xe6ed;</span>
+                                    </td>
+                                    <td>
+                                        <span class="noStartcolor">&#xe6ed;</span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table> 
+                            <div class="tips-box hide">
+                                <ul>
+                                    <li>当前阶段：核对明细</li>
+                                    <li>村总数：2000个</li>
+                                    <li>已完成：8000个</li>
+                                    <li>未完成： <span class="red" onclick="desc()">2个</span> </li>
+                                    <li>完成率：99.8%</li>
+                                    <li>应完成时间：<span class="red" onclick="desc()">2010年7月7日</span></li>
+                                    <li>触发预警条件：<span class="red" onclick="desc()">超时</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="layui-tab-item">
+                        <div class="card-search p10">
+                            <div class="layui-form">
+                                <div class="layui-form-item">
+                                    <div class="layui-inline">
+                                        <select name="subsidyYear" lay-filter="subsidyYear">
+                                            <option value="">请选择补贴年度</option>
+                                            <option value="0">省</option>
+                                            <option value="1">市</option>
+                                            <option value="2">县</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-inline">
+                                        <select name="subsidyState" lay-filter="subsidyState">
+                                            <option value="">请选择补贴状态</option>
+                                            <option value="0">省</option>
+                                            <option value="1">市</option>
+                                            <option value="2">县</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-inline">
+                                        <input type="text" name="subsidyName" class="layui-input" placeholder="请输入补贴名称">
+                                    </div>
+                                    <div class="searchBtn" onclick="resetBtn()">
+                                        &#xe627;&nbsp;&nbsp; 重置
+                                    </div>
+                                    <div class="searchBtn">
+                                        &#xe627;&nbsp;&nbsp; 查询
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="card-progress p10">
+                            <ul class="progressList">
+                                <li>总体进度</li>
+                                <li><span class="complete">&#xe6c8;&nbsp;&nbsp;</span>已完成</li>
+                                <li><span class="progress">&#xe6c8;&nbsp;&nbsp;</span>正在进行</li>
+                                <li><span class="noStart">&#xe6ed;&nbsp;&nbsp;</span>暂未开始</li>
+                                <li><span class="yujin">&#xe726;&nbsp;&nbsp;</span>预警</li>
+                                <div class="clear"></div>
+                            </ul>
+                            <table class="layui-table" >
+                                <colgroup>
+                                    <col width="100">
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="200">
+                                    <col width="150">
+                                    <col width="100">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="tc">设立补贴</th>
+                                        <th class="tc">乡镇核对明细</th>
+                                        <th class="tc">明细上报</th>
+                                        <th class="tc">指标下达</th>
+                                        <th class="tc">资金发放</th>
+                                        <th class="tc">结果反馈</th>
+                                    </tr> 
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>省农业农村厅</span>
+                                        </td>
+                                        <td>
+                                            <span>登记表打印</span>
+                                            <span>清册表打印</span>
+                                            <span>公示</span>
+                                        </td>
+                                        <td>
+                                            <span>县农业农村局</span>
+                                            <span>市农业农村局</span>
+                                            <span>省农业农村局</span>
+                                        </td>
+                                        <td>
+                                            <span>省财政厅</span>
+                                            <span>市财政局</span>
+                                            <span>县财政局</span>
+                                        </td>
+                                        <td>
+                                            <span>县农业农村局</span>
+                                            <span>银行</span>
+                                        </td>
+                                        <td>
+                                            <span>县农业农村局</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="completeColor line_155 state_line" onclick="desc()">&#xe6c8;&nbsp;&nbsp;</span>
+                                        </td>
+                                        <td>
+                                            <span class="yujinColor line_86 state_line">&#xe726;</span>
+                                            <span class="progressing line_86">&#xe6c8;</span>
+                                            <span class="progressing line_116">&#xe6c8;</span>
+                                        </td>
+                                        <td>
+                                            <span class="progressing line_86">&#xe6c8;</span>
+                                            <span class="progressing line_86">&#xe6c8;</span>
+                                            <span class="noStartcolor line_116">&#xe6ed;</span>
+                                        </td>
+                                        <td>
+                                            <span class="noStartcolor line_86">&#xe6ed;</span>
+                                            <span class="noStartcolor line_86">&#xe6ed;</span>
+                                            <span class="noStartcolor line_122">&#xe6ed;</span>
+                                        </td>
+                                        <td>
+                                            <span class="noStartcolor line_86">&#xe6ed;</span>
+                                            <span class="noStartcolor line_142">&#xe6ed;</span>
+                                        </td>
+                                        <td>
+                                            <span class="noStartcolor">&#xe6ed;</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                            <div class="tips-box hide">
+                                <ul>
+                                    <li>当前阶段：核对明细</li>
+                                    <li>村总数：2000个</li>
+                                    <li>已完成：8000个</li>
+                                    <li>未完成： <span class="red" onclick="desc()">2个</span> </li>
+                                    <li>完成率：99.8%</li>
+                                    <li>应完成时间：<span class="red" onclick="desc()">2010年7月7日</span></li>
+                                    <li>触发预警条件：<span class="red" onclick="desc()">超时</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="../libs/jquery-1.8.0.min.js"></script>
+<script src="../libs/layui/layui.all.js"></script>
+<script src="../js/index.js"></script>    
+<script src="../js/home.js"></script> 
+</html>

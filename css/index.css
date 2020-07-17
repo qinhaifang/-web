@@ -1,0 +1,370 @@
+.layui-layout-admin .layui-header{
+   height: 60px;
+   line-height: 60px;
+   background-color: #034278; 
+   padding: 5px 30px;
+}
+.layui-nav{
+    background: #447DAD;
+    color: #fff;
+    height: 100%;
+}
+.layui-layout-admin .layui-logo{
+    color: #fff;
+    width: auto;
+    padding-left: 30px;
+    font-size: 20px;
+    line-height: 70px;
+}
+.layui-nav .layui-nav-item a{
+    padding: 0 10px;
+    font-size: 18px;
+}
+.layui-layout-admin .layui-side{
+    top: 70px;
+}
+.layui-nav-tree .layui-nav-item a:hover{
+    background-color: #034278;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+    /* background-color: #034278; */
+    background-color: initial;
+}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+    background-color: #447dad;
+}
+.layui-nav-itemed>.layui-nav-child dd a{
+    font-size: 16px;
+}
+/* content */
+.content{
+    width: 100%;
+    height: 100%;
+}
+.icon-address{
+    display: inline-block;
+    color: #447dad;
+    font-size: 20px;
+    padding: 20px 0 0 20px;
+}
+.card{
+    border:1px solid #EBE9E9;
+    border-radius: 4px;
+    width: 96%;
+    padding: 10px 20px;
+    margin: 20px;
+    box-shadow: 1px 1px 10px 1px #eceaea;
+}
+.card-total ul li{
+    width: 25%;
+    float: left;
+}
+.card-total ul li div{
+    padding: 8px 0;
+    display: flex;
+}
+.card-progress ul.progressList li{
+    width: 150px;
+    float: left;
+}
+.card-progress ul li .complete{
+    color: #93CCDD;
+}
+.card-progress ul li .progress{
+    color:#FAD727
+}
+.card-progress ul li .yujin{
+    color:#FA6400
+}
+.card-search .layui-form-item{
+    float: left;
+}
+.card-search .layui-form-label{
+    width: 32px;
+}
+.card-search .layui-form-item .layui-input-inline{
+    /* width: 100px; */
+}
+.card-search .layui-form-item{
+    margin-bottom: 0;
+}
+.searchBtn{
+    border-radius: 4px;
+    /* border:2px solid #A6CEF2; */
+    background-color: #A6CEF2;
+    color: #fff;
+    width: 120px;
+    text-align: center;
+    padding: 10px 0;
+    float: right;
+    margin-left: 30px;
+}
+.card-table .button{
+    border-radius: 4px;
+    background-color: #A6CEF2;
+    color: #fff;
+    width: 140px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+}
+.card-table .left{
+    width: 13%;
+    float: left;
+    padding-top: 10px;
+    height: 600px;
+}
+.card-table .left #tree{
+    height: 100%;
+    overflow-y: scroll;
+}
+.card-table .right{
+    width: 87%;
+    float: right;
+}
+.card-progress table tbody tr td{
+    border: 0;
+    text-align: center;
+    border-left: 1px solid;
+    border-width: 1px;
+    border-color: #e6e6e6;
+}
+.card-progress table tbody tr{
+    /* height: 80px; */
+    border-bottom: 0;
+
+}
+.card-progress table tbody tr td span{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    /* position: relative;
+    top: -10px; */
+} 
+.floatRight{
+    padding: 10px;
+}
+.floatRight .block-y{
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #FCF9B5;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+.floatRight .block-o{
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #FA6400;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+.userPhoto a{
+    font-size: 40px!important;
+    padding: 25px!important;
+}
+.userPhoto a div{
+    position: absolute;
+    top: 9px;
+    right: 17px;
+}
+.userPhoto a span{
+    display: block;
+    font-size: 16px;
+}
+/* 首页 */
+.home{
+    width: 100%;
+}
+.home-main {
+    padding: 20px 0;
+}
+.home-main .home-content li.block{
+    width: 32%;
+    height: 327px;
+    float: left;
+    margin-right: 1%;
+    border:1px solid #EDEDED;
+    box-shadow: 1px 1px 10px 1px #eceaea;
+    position: relative;
+}
+.home-content .site-demo-laydate .layui-inline,.home-content .layui-laydate,.home-content .layui-laydate-main,.home-content .layui-laydate-content table{
+    width: 100%;
+}
+.home-content .layui-laydate{
+    border: 0;
+    box-shadow: none;
+}
+.home-content .date-block p{
+    padding: 10px;
+}
+.home-content .date-block p span:last-child{
+    float:right;
+}
+.home-content .layui-table td,.home-content  .layui-table th{
+    border: 0;
+    border-bottom: 1px solid #efebeb;
+}
+.block .layui-tab-content .layui-table{
+    border: 0;
+}
+.block .block-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+}
+.block .block-footer span:last-child{
+    position: absolute;
+    right: 10px;
+}
+.layui-table th,.layui-table td{
+    /*表头内容居中显示*/
+    text-align: center;
+}
+.shenhe{
+    /* background-color: #FA6400;
+    color: #fff; */
+    color: #FA6400;
+    font-size: 16px;
+    cursor: pointer;
+}
+.pass{
+    color: #5FB878;
+    font-size: 16px;
+    cursor: pointer;
+}
+.waring{
+    color: #1893FC;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* 进度条 */
+.line_155:after{ 
+    content: '';
+    position: relative;
+    left: 52px;
+    top: -10px;
+    display: block;
+    width: 155px;
+    height: 0px;
+    border: 1px #1893FC dashed;
+}
+.line_86:after{ 
+    content: '';
+    position: relative;
+    left: 58px;
+    top: -10px;
+    display: block;
+    width: 86px;
+    height: 0px;
+    border: 1px #1893FC dashed;
+}
+.line_116:after{
+    content: '';
+    position: relative;
+    left: 57px;
+    top: -10px;
+    display: block;
+    width: 116px;
+    height: 0px;
+    border: 1px #1893FC dashed;
+}
+.line_122:after{
+    content: '';
+    position: relative;
+    left: 57px;
+    top: -10px;
+    display: block;
+    width: 122px;
+    height: 0px;
+    border: 1px #1893FC dashed;
+}
+.line_142:after{
+    content: '';
+    position: relative;
+    left: 57px;
+    top: -10px;
+    display: block;
+    width: 142px;
+    height: 0px;
+    border: 1px #1893FC dashed;
+}
+.state_line:after{
+    border: 1px #1893FC solid;
+}
+/* 消息tips */
+.tips-box{
+    width: 230px;
+    height: auto;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba(0,0, 0, 0.5);
+    ;
+    position: absolute;
+    z-index: 1000 ;
+    border-radius: 4px;;
+    
+}
+.tips-box li{
+    padding: 6px 0;
+}
+.layui-table-page{
+    text-align: right;
+}
+#checkBlock,#yujinDesc{
+    padding: 20px;
+    display: none;
+}
+.card-total ul.totalNum{
+    padding: 20px 0px;
+}
+.card-total ul.totalNum li
+ {
+    width: 20%;
+    float: left;
+}
+.card-total ul.totalNum.w25 li{
+    width: 25%;
+}
+.card-total ul.totalNum li ul li,.card-total ul.totalNum.w25 li ul li
+ {
+    width: 100%;
+    float: left;
+    padding-bottom: 6px;
+}
+.totalNum li .title-icon{
+    padding: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.totalNum li div span{
+    display: block
+}
+.card-total .left-80{
+    width: 76%;
+    float: left;
+    border-right: 1px solid #efebeb;
+}
+.card-total .right-20{
+    width: 23%;
+    float: right;  
+}
+.card-total ul.totalNum.right-total{
+    padding: 0 20px;
+}
+.card-total ul.totalNum.right-total li{
+    width: 100%;
+    padding: 4px 0;
+}
+
